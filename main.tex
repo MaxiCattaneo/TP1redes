@@ -1,0 +1,93 @@
+\documentclass{article}
+
+\usepackage[spanish]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{hyperref}
+
+\title{Trabajo Practico 1}
+\author{Maximo Cattaneo}
+\affil{\texttt{cattaneomaxi@gmail.com}}
+
+\begin{document}
+\maketitle
+
+
+
+\section{Packet Tracer}
+Cisco Packet Tracer es un programa de simulación de redes desarrollado por Cisco Systems. Este software se utiliza principalmente para crear y simular redes informáticas, permitiendo a los usuarios diseñar, configurar y poner en funcionamiento redes virtuales. Gracias a este programa, se puede diseñar un proyecto de redes sin necesidad de tener el hardware necesario. Esta cuenta con muchos dispositivos como por ejemplo switchers, routers, hubs, PCs, servidores, teléfonos, etc. Una funcionalidad que tiene esta aplicación es la de manejar el tiempo, esta puede ser en tiempo real o en tiempo de simulación. En el real la simulación se ejecuta en tiempo real lo que significa que los paquetes se transmiten y procesan como lo harían en una red real. El de simulación permite que el usuario controle y avance el tiempo de manera manual (ideal para analizar el flujo de paquetes). Además, tiene 2 modos de vista, el lógico y el físico. 
+
+\subsection{Modo Físico}
+Este modo permite visualizar como se vería la red en un entorno físico real. Se pueden organizar los dispositivos en racks y observar la distribución física.
+
+\subsection{Modo Lógico}
+Este, permite que el usuario interactúe con la red desde una perspectiva conceptual, se configuran los dispositivos y se diseña la topología de la red.
+
+\section{Dispositivos Finales}
+En esta sección se hará un breve análisis de los dispositivos finales que se utilizaran durante el cursado, estos son: PC, laptop, server y printer. No se utilizara ningún dispositivo wireless.
+
+\subsection{PC}
+Esta se refiere a la computadora de escritorio. Cuando hacemos click izquierdo sobre ella nos aparece un icono de un gabinete con sus módulos disponibles, además se puede ver una especie de escritorio con aplicaciones y programar en ella.
+
+\subsubsection{Módulos disponibles}
+Algunos módulos disponibles son: Ethernet, Fibra Óptica, WIC, micrófono, auriculares. Dependiendo de cada modulo, algunos pueden ser intercambiados con la PC encendida mientras otros no. Por ejemplo los auriculares pueden ser conectados y desconectados con la PC encendida mientras que los módulos Ethernet por ejemplo no pueden, ya que pueden causar problemas de hardware.
+
+\subsubsection{Conexiones}
+Estas se pueden dar de 2 maneras. La estándar son mediante cables Ethernet, utilizando el puerto Ethernet RJ-45 y las de fibra son mediante cables de fibra óptica, utilizando el modulo SFP si esta disponible.
+
+\subsection{Laptop}
+Este es muy parecido a la PC, con la particularidad de que es portátil, lo que facilita algunas conexiones. También cuenta con su escritorio con sus respectivas aplicaciones.
+
+\subsection{Server}
+Un server es una computadora que proporciona recursos, datos, servicios o programas a otros dispositivos a través de una red. Estos son muy importantes, ya que centralizan recursos y servicios. En esta también podemos encontrar un escritorio con distintas aplicaciones al igual que en las PCs y Laptops.
+
+\subsubsection{Módulos disponibles}
+Algunos de los módulos son: Ethernet, fibra óptica y NIC para agregar múltiples interfaces de red. Al igual que con las PCs hay algunos módulos que solo se pueden cambiar con el server apagado, por ejemplo las tarjetas NIC o los módulos de fibra óptica.
+
+\subsubsection{Conexiones}
+Al igual que las PCs estas tienen conexiones estándar y de fibra. Las estándar son mediante cables Ethernet para tareas como servidores web o archivos mientras que las de fibra, se suelen utilizar para conectarse a redes de alta velocidad.
+
+\subsection{Printer}
+Por ultimo, este dispositivo se refiere a una impresora convencional. No tiene escritorio con aplicaciones ya que una impresora no lo posee. Esta contiene módulos como el Ethernet , fibra óptica y wireless que no va a ser utilizado.
+
+\section{Dispositivos de Red}
+
+\subsection{Routers}
+Los routers son dispositivos de red que dirigen el trafico de datos entre diferentes redes. En packet tracer hay un total de 15 routers, estos son muy distintos entre si. Es muy importante cual elegir depende como lo queramos utilizar ya que, es muy común que algunos routers no tengan ciertas características, se eligen en cuestión a las capacidades que tienen. Además, hay que tomar estos dispositivos con cuidado, ya que algunos tienen una versión de cisco antigua.
+
+\subsection{Hubs}
+Los Hubs son dispositivos de red básicos que permiten conectar múltiples dispositivos en una red local para que puedan comunicarse entre si, estos fueron reemplazados en gran medida por los switches debido a sus limitaciones. Estos no tienen ninguna extensión y no vamos a entrar mucho en profundidad.
+
+\section{Cableado}
+En Packet Tracer hay 11 tipos de cables distintos, además existe una opción donde se elige automáticamente el cable. Algunos de ellos son:
+
+\subsection{Cable consola}
+Este sirve para conectar la computadora al router y manejarla desde el router y no desde la PC, esto es útil por el tema de la seguridad. Es caro pero muy necesario
+
+\subsection{Cable straight y cross}
+Estos son dos tipos de cable de red Ethernet que se utilizan para conectar dispositivos. Algunos ejemplos de conectividad de esos cables son para conectar router con router, router con PC o switcher con switcher. Los cables Straight-Through suelen utilizarse para conectar dispositivos diferentes entre si, mientras que el crossover para dispositivos similares.
+
+\subsection{Cable fiber}
+Es un tipo de cable de red que a diferencia del Ethernet transmite los datos en forma de pulsos de luz en lugar de señales eléctricas. Esta es conocida por su capacidad para transmitir grandes volúmenes de datos a largas distancias con una velocidad muy alta y una perdida mínima de señal.
+
+\section{Conexión entre Pc's}
+En la figura 1 podemos ver 2 PC conectadas, utilizando un cable cross. Si queremos agregar otra mas a nuestra red necesitaríamos utilizar un switch o un hub para interconectarlas.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{Computadoras conectadas.jpg}
+\caption{Conexión cruzada simple entre dos PCs}
+\label{}
+\end{figure}
+
+\section*{Repositorio}
+Puedes encontrar el código fuente de este documento en mi repositorio de GitHub: \url{https://github.com/MaxiCattaneo/TP1redes}
+
+\end{document}
